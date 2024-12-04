@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness.Helper</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        Fitness<span class="span">.</span>Helper
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-toggle-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Início</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>IMC</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#calories" class="navbar-link" data-nav-link>Calculadora</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <a href="exercises.html" class="btn btn-primary">Começar</a>
+
+      <button class="nav-toggle-btn" aria-label="open manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+  <main>
+    <article>
+
+      <section class="section hero" aria-label="hero" id="home" data-section
+        style="background-image: url('./assets/images/hero-banner.jpg')">
+        <div class="container">
+
+          <p class="hero-subtitle">Saúde e Bem-Estar</p>
+
+          <h1 class="h1 hero-title">Porque cuidar do nosso corpo, é o mais importante</h1>
+
+          <p class="hero-text">
+            Alcance o melhor da qualidade de vida.
+          </p>
+
+          <a href="exercises.html" class="btn btn-secondary">Começar</a>
+        </div>
+      </section>
+
+      <section class="section service" aria-label="service" data-section>
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-1.svg" width="60" height="60" loading="lazy" alt="Women’s Course">
+                </div>
+                <h3 class="h3">
+                  <a href="#about" class="card-title">Índice de Massa Corporal</a>
+                </h3>
+
+                <p class="card-text">
+                  O Índice de Massa Corporal (IMC) é uma medida de gordura corporal com base na altura e no peso que se
+                  aplica a homens e mulheres adultos. Calcule o seu IMC para determinar o seu objetivo.
+                </p>
+
+                <a href="#about" class="btn btn-secondary">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card active">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-2.svg" width="60" height="60" loading="lazy" alt="Basic Course">
+                </div>
+
+                <h3 class="h3">
+                  <a href="exercises.html" class="card-title">Planos de Exercícios</a>
+                </h3>
+
+                <p class="card-text">
+                  Selecione um programa de treino com base no seu objetivo e na sua agenda. Em primeiro lugar, selecione
+                  o seu objetivo. Em seguida, determine quantos dias você poderia reservar para treinar em uma semana.
+                </p>
+
+                <a href="exercises.html" class="btn btn-secondary">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.svg" width="60" height="60" loading="lazy" alt="Men’s Course">
+                </div>
+                <h3 class="h3">
+                  <a href="#calories" class="card-title">Calculadora de Calorias</a>
+                </h3>
+
+                <p class="card-text">
+                  A Calculadora de Calorias pode ser usada para estimar o número de calorias que uma pessoa precisa
+                  consumir diariamente. Essa calculadora também pode fornecer algumas diretrizes simples para ganhar ou
+                  perder peso.
+                </p>
+
+                <a href="#calories" class="btn btn-secondary">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section about" aria-label="about" id="about" data-section>
+        <div class="container">
+
+          <div class="about-banner img-holder" style="--width: 470; --height: 580;">
+            <img src="./assets/images/about-banner.jpg" width="470" height="580" loading="lazy" alt="about banner"
+              class="img-cover">
+          </div>
+
+          <div class="about-content">
+
+            <h3 class="h3 section-title">Índice de Massa Corporal</h3>
+
+            <p class="section-text">
+              O Índice de Massa Corporal (IMC) é uma medida de gordura corporal com base na altura e no peso que se
+              aplica a homens e mulheres adultos. Calcule o seu IMC para determinar o seu objetivo.
+            </p>
+            <form id="bmi-form">
+              <label for="bmi-height">Sua altura:</label><br />
+              <input type="text" id="bmi-height" placeholder="Centímetros" /><br />
+              <label for="bmi-weight">Seu Peso:</label><br />
+              <input type="text" id="bmi-weight" placeholder="Quilogramas" /><br /><br />
+              <span id="bmi-submit" class="btn btn-secondary">Calcular</span> <br>
+            </form>
+
+            <div class="list-box">
+              <h4 id="bmi-result">Seu IMC = [Não Informado]</h4><br />
+              <h3>Categorias:</h3>
+              <ul>
+                <li>Magreza: IMC &lt; 18.5 (Ganhar peso)</li>
+                <li>Peso Normal: 18.5 &lt; IMC &lt; 24.9 (Manter)</li>
+                <li>Sobrepeso: IMC &gt; 24.9 (Perder peso)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-calories">
+        <div id="calories" class="about-content-calories">
+          <h3 class="h3 section-title">Calculadora de Calorias</h3>
+          <div class="container">
+            <form id="calorie-form"> <br>
+              <div class="gender-container">
+                <div class="gender-input male">
+                  <input type="radio" id="male" name="gender" value="male" />
+                  <i class="fas fa-mars male-icon"></i>
+                  <label for="male">Homem</label>
+                </div>
+                <div class="gender-input female">
+                  <input type="radio" id="female" name="gender" value="female" />
+                  <i class="fas fa-venus female-icon"></i>
+                  <label for="female">Mulher</label>
+                </div>
+              </div>
+              <label for="age">Idade:</label>
+              <input type="text" id="age" placeholder="15 - 80 anos" />
+              <label for="calorie-height">Altura:</label>
+              <input type="text" id="calorie-height" placeholder="Centímetros" />
+              <label for="calorie-weight">Peso:</label>
+              <input type="text" id="calorie-weight" placeholder="Quilogramas" />
+              <label for="activity">Nível de Atividade:</label>
+              <select name="activity" id="activity">
+                <option value="basal">Taxa Metabólica Basal (TMB)</option>
+                <option value="sedentary">Sedentário: Pouco ou nenhum exercício</option>
+                <option value="light">Leve: Exercício 1-3 vezes/semana</option>
+                <option value="moderate">Moderado: Exercício 4-5 vezes/semana</option>
+                <option value="active">Ativo: Exercício diário ou exercício intenso 3-4 vezes/semana</option>
+                <option value="very-active">Muito Ativo: Exercício intenso 6-7 vezes/semana</option>
+                <option value="extra-active">Extra Ativo: Exercício muito intenso diariamente ou trabalho físico
+                </option>
+              </select>
+
+              <span id="calorie-submit" class="btn btn-secondary">Calcular</span>
+
+              <div class="list-box">
+                <h4 id="calorie-result">SUA NECESSIDADE CALÓRICA = [Não Informado]</h4><br />
+                <h3>Diretrizes:</h3>
+                <ul>
+                  <li>Para Perder Peso: Subtraia 250-500 da sua necessidade calórica.</li>
+                  <li>Para Manter o Peso: Subtraia ou adicione 0-200 à sua necessidade calórica.</li>
+                  <li>Para Ganhar Peso: Adicione 250-500 à sua necessidade calórica.</li>
+                </ul>
+              </div>
+              </ul>
+            </form>
+          </div>
+        </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/utils.js" defer></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
